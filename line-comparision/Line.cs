@@ -22,7 +22,10 @@ namespace Line_comparison
 
             if(Length1 > Length2){
                 Console.WriteLine("The Line 1 Longer than Line2");
-            }else{
+            }else if(Length1 == Length2){
+                Console.WriteLine("The both have the same Length");
+            }
+            else{
                 Console.WriteLine("The Line 2 longer than Line 1");
             }
         }
