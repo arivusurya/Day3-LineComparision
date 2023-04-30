@@ -4,10 +4,13 @@ namespace Line_comparison
     public class  Line_comparison
     {
 
-        public void LengthOfTheLine(Line line){
-            double Length = Math.Sqrt(Math.Pow((line.x2-line.x1),2)+Math.Pow((line.y2-line.y1),2));
-            line.LineLength = (int)Length;
+   
+        public void CompareLenth(Line lin1,Line lin2){
+            if(lin1.LineLength.Equals(lin2.LineLength)){
+                System.Console.WriteLine("Both lines are equal");
+            }else{
+                System.Console.WriteLine("Both lines are not equal");
+            }
         }
-
     }
 }

@@ -10,6 +10,10 @@ namespace Line_comparison
             this.y2= y2;
         }
 
-        public int LineLength{ get ; set ; }
+       public double LineLength{get{return Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2));}}
+
+
+            
+     
     }
 }
